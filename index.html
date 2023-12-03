@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KodeGo Exam One</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <script src="https://sdk.scdn.co/spotify-player.js"></script>
+  </head>
+  <body>
+    <div class="app-container">
+      <div class="player-conatainer">
+        <img id="playerImage" class="player-img" placeholder="disc image" />
+        <div class="player-info-container">
+          <p id="playingSongTitle" class="song-title">song title</p>
+          <p id="playingArtist" class="artist">artist</p>
+        </div>
+        <div class="track-container">
+          <div class="track-duration-container">
+            <div>
+              <p id="startTime">0:00</p>
+              <p id="endTime">null</p>
+            </div>
+            <input
+              type="range"
+              id="trackSlider"
+              class="track-slider"
+              value="0"
+              step="1"
+              min="0"
+              max="100"
+            />
+          </div>
+        </div>
+
+        <div class="player-controls-container">
+          <div id="prevTrack" class="prev-track">
+            <i class="fa fa-step-backward fa-2x"></i>
+          </div>
+          <div id="togglePlay" class="playpause-track">
+            <i class="fa fa-play-circle fa-5x"></i>
+          </div>
+          <div id="nextTrack" class="next-track">
+            <i class="fa fa-step-forward fa-2x"></i>
+          </div>
+        </div>
+      </div>
+      <div class="app-information-container">
+        <div class="information-title"><h2>Explore</h2></div>
+        <div class="app-navigation">
+          <ul>
+            <li id="navigationLinks">Lyrics</li>
+            <li id="navigationLinks">Other Albums</li>
+            <li id="navigationLinks">Related Artists</li>
+          </ul>
+        </div>
+        <div id="informationBody"></div>
+      </div>
+    </div>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

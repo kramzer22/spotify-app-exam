@@ -1,0 +1,171 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+*::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+}
+
+*::-webkit-scrollbar:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+*::-webkit-scrollbar-track {
+  background-color: rgba(51, 51, 51, 0.6);
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgb(214, 208, 208);
+}
+
+.app-container {
+  display: grid;
+  grid-template-columns: 500px 1fr;
+  gap: 50px;
+
+  padding: 160px 300px;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(54, 37, 37);
+}
+
+.player-conatainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+
+  padding: 80px 40px;
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  background-color: rgba(218, 231, 231, 0.4);
+}
+
+.player-img {
+  width: 70%;
+
+  object-fit: contain;
+}
+
+.song-title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.artist {
+  font-size: 16px;
+}
+
+.player-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.track-container {
+  display: flex;
+  width: 100%;
+}
+
+.track-duration-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  width: 100%;
+}
+
+.track-duration-container div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.track-slider {
+  width: 100%;
+  height: 3px;
+  background-color: antiquewhite;
+}
+
+.player-controls-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+}
+
+.app-information-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 30px;
+
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  overflow: hidden;
+
+  color: #f0f8ff;
+}
+
+.app-navigation {
+  flex-grow: 1;
+  display: flex;
+  width: 100%;
+}
+
+.app-navigation ul {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  list-style: none;
+}
+
+.app-navigation ul li:hover {
+  cursor: pointer;
+}
+
+.information-container {
+  flex-grow: 1;
+  display: flex;
+
+  padding-top: 40px;
+  height: 100%;
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.lyrics-card {
+  overflow-x: auto;
+  font-size: 22px;
+}
+
+.sliding-card {
+  flex-direction: row;
+  gap: 30px;
+
+  overflow-y: auto;
+}
+
+.album-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.album-list-img {
+  height: 300px;
+  width: 300px;
+  object-fit: contain;
+}
+
+.album-list-img:hover {
+  cursor: pointer;
+}
